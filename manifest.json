@@ -1,11 +1,11 @@
 {
-   "name": "SilentTyping",
-   "version": "1.0.0",
-   "description": "Silences your typing indicator.",
+   "name": "CopyEmbeds",
+   "version": "1.2.0",
+   "description": "Copy the content of an embed.",
    "authors": [
       {
-         "name": "eternal",
-         "id": "263689920210534400"
+         "name": "tenzin",
+         "id": "1021823375112417393"
       }
    ]
 }

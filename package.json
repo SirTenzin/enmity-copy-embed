@@ -1,9 +1,9 @@
 {
-   "name": "plugin-template",
-   "description": "Template for enmity plugins.",
-   "version": "1.0.0",
+   "name": "emity-copy-embed",
+   "description": "Copy the content of an embed",
+   "version": "1.2.0",
    "license": "GPL-3.0",
-   "author": "Zoey & eternal",
+   "author": "SirTenzin, Zoey & eternal (template)",
    "scripts": {
       "build": "rollup -c --configPlugin esbuild"
    },

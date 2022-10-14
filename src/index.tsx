@@ -1,24 +1,19 @@
 import { Plugin, registerPlugin } from 'enmity/managers/plugins';
-import { React } from 'enmity/metro/common';
-import { getByProps } from 'enmity/metro';
-import { create } from 'enmity/patcher';
+import { React, Toasts, Constants } from 'enmity/metro/common';
 import manifest from '../manifest.json';
+import embedGrabber from './commands';
 
 import Settings from './components/Settings';
 
-const Typing = getByProps('startTyping');
-const Patcher = create('silent-typing');
-
-const SilentTyping: Plugin = {
+const ThemeStore: Plugin = {
    ...manifest,
 
    onStart() {
-      Patcher.instead(Typing, 'startTyping', () => { });
-      Patcher.instead(Typing, 'stopTyping', () => { });
+      this.commands = [embedGrabber]
    },
 
    onStop() {
-      Patcher.unpatchAll();
+      this.commands = []
    },
 
    getSettingsPanel({ settings }) {
@@ -26,4 +21,4 @@ const SilentTyping: Plugin = {
    }
 };
 
-registerPlugin(SilentTyping);
+registerPlugin(ThemeStore);

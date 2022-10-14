@@ -8,11 +8,11 @@ interface SettingsProps {
 
 export default ({ settings }: SettingsProps) => {
    return <FormRow
-      label='Example Setting'
+      label='Copy as plain text (redundant ignore this)'
       trailing={
          <FormSwitch
-            value={settings.get('example', true)}
-            onValueChange={() => settings.toggle('example', true)}
+            value={settings.get('isPlainText', true)}
+            onValueChange={() => settings.toggle('isPlainText', true)}
          />
       }
    />;
