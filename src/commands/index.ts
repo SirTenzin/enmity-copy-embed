@@ -121,7 +121,7 @@ const embedGrabber: Command = {
         Clipboard.setString(asText)
         Toasts.open({ 
             content: "Copied embed(s) to clipboard", 
-            source: getIDByName("pending-alert")
+            source: getIDByName("Check")
         })
         // For now the embeds will always come in text format.
         // if(isText) {
