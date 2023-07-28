@@ -125,6 +125,7 @@ const ThemeStore: Plugin = {
                                  })
                              }
                              Clipboard.setString(asText)
+                             LazyActionSheet.hideActionSheet()
                              Toasts.open({ 
                                  content: "Copied embed(s) to clipboard", 
                                  source: getIDByName("Check")
